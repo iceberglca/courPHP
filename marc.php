@@ -73,6 +73,28 @@
                              <?php echo " veneLorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  <br> Excepteur sint occaecat cupidatat non proident, <br> sunt in culpa qui officia deserunt mollit anim id est laborum.Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero natis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. <br> Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna." ?>
             </td>
         </tr>
+        <tr>
+            <th>Exercice 3</th>
+            <th>Resultat</th>
+        </tr>
+                <tr>
+            <td>
+            <ul>
+                <li>Créer un tableau de nombres entiers.</li>
+                <li>Afficher tous les éléments du tableau.</li>
+                <li>Calculer et afficher la somme de tous les éléments du tableau.</li>
+                <li>Trouver et afficher la valeur maximale du tableau.</li>
+                <li>Trier le tableau en ordre croissant et afficher le tableau trié</li>
+            </ul>
+            </td>
+            <td>
+                
+             
+                             <?php 
+                                //ecrire le code ici
+                                ?>
+            </td>
+        </tr>
     </table>
 </body>
 
