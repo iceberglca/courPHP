@@ -91,8 +91,23 @@
                 
              
                              <?php 
-                                //ecrire le code ici
-                                ?>
+                                 $tableau = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
+                                 print_r($tableau);
+                                echo "<br>";
+                                 $somme= array_sum($tableau);
+                                 echo("la somme de tous les elements du tableau est:$somme.");
+                            echo "<br>";
+                                $max_value= max($tableau);
+                                echo "la valeur maximale du tableau est:$max_value.";
+                                echo "<br>";
+                                sort($tableau);
+                                echo"le tableau en ordre croissant est:";
+                                foreach ($tableau as $valeur)
+                                 {
+                                    echo 'valeur:'.$valeur;
+                                }                               
+
+                             ?>
             </td>
         </tr>
     </table>
