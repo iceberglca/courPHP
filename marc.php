@@ -91,7 +91,7 @@
 
 
                 <?php
-                $tableau = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
+                $tableau = array(1, 2, 3, 4, 5, 6, 7, 8 ,9);
                 print_r($tableau);
                 echo "<br>";
                 $somme = array_sum($tableau);
@@ -115,20 +115,61 @@
         </tr>
         <tr>
             <td>
-                <ul>
+                <ol>
                     <li>Créer un tableau de nombres entiers.</li>
                     <li>Afficher tous les éléments du tableau. en utilisant une boucle (print_r est interdit) </li>
                     <li>Calculer et afficher la somme de tous les éléments du tableau. (array_sum est interdit)</li>
                     <li>Trouver et afficher la valeur maximale du tableau. (max est interdit)</li>
                     <li>Trier le tableau en ordre croissant et afficher le tableau trié (sort est interdit)</li>
-                </ul>
+                </ol>
             </td>
             <td>
+                <?php
+            $tableau=array(1 ,2,4,5 );
+            echo "1-les elements du tableau sont:";
+            var_dump($tableau);
+            $somme =array_sum($tableau);
+echo "2-La somme de tous les elements est : " . $somme;
+echo "<br>";
+
+   $max_value=max($tableau);
+   echo "3-la valeur maximale du tableau:$max_value";
+   echo "<br>";
+   sort($tableau);
+   echo "4-le tableau trié est:";
+   foreach ($tableau as $valeur) {
+                    echo 'valeur:' . $valeur;
+                }
+
+               ?>
+              
             </td>
         </tr>
         <tr>
             <th>Exercice 5</th>
-            <th>Resultat</th>
+            <th>
+               <?php
+               $Nom="olloko";
+               $prenom="marc-roland";
+               $nom_complet=" marc-roland olloko " ;            
+                 echo "1-le nom complet est:$nom_complet";
+                 echo '<br>';
+               $panierMaman=array('pomme','banane','cerise');
+              $listeFruits = "";
+$first = true;
+
+foreach ($panierMaman as $fruit) {
+    if ($first) {
+        $listeFruits .= $fruit;
+        $first = false;
+    } else {
+        $listeFruits .= ", " . $fruit;
+    }
+}
+    echo"2-la liste de maman est:".$listeFruits;
+
+    ?> 
+            </th>
         </tr>
         <tr>
             <td>
