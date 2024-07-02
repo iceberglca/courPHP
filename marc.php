@@ -129,12 +129,15 @@
             echo "1-les elements du tableau sont:";
             var_dump($tableau);
             $somme =array_sum($tableau);
-echo "2-La somme de tous les elements est : " . $somme;
+            echo "<i style='color:red'>je veux que tu affiche les élement via une boucle </i>";
+echo "2-La somme de tous les elements est :" . $somme;
 echo "<br>";
+echo "<i style='color:red'>array_sum est interdit, trouve un autre moyen </i>";
 
    $max_value=max($tableau);
    echo "3-la valeur maximale du tableau:$max_value";
    echo "<br>";
+   echo "<i style='color:red'>max est interdit, trouve un autre moyen </i>";
    sort($tableau);
    echo "4-le tableau trié est:";
    foreach ($tableau as $valeur) {
@@ -179,6 +182,21 @@ foreach ($panierMaman as $fruit) {
                 </ul>
             </td>
             <td>
+            </td>
+        </tr>
+        <tr>
+            <th>Exercice 6</th>
+            <th>Resultat</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Utiliser la boucle for pour compter j'usqu'a 1000 en affichant à chaque fois chaque étape.</li>
+                    <li>Utiliser la boucle foreach pour compter j'usqu'a 1000 en affichant à chaque fois chaque étape.</li>
+                </ul>
+            </td>
+            <td>
+
             </td>
         </tr>
     </table>
