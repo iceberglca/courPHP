@@ -128,21 +128,39 @@
             $tableau=array(1 ,2,4,5 );
             echo "1-les elements du tableau sont:";
             var_dump($tableau);
-            $somme =array_sum($tableau);
+           $sum = 0;
+for ($i = 0; $i < count($tableau); $i++) {
+    $sum += $tableau[$i];
+}
             echo "<i style='color:red'>je veux que tu affiche les élement via une boucle </i>";
-echo "2-La somme de tous les elements est :" . $somme;
+            echo "<br>";
+echo "2-La somme de tous les elements est :" .$sum;
 echo "<br>";
 echo "<i style='color:red'>array_sum est interdit, trouve un autre moyen </i>";
+   echo "<br>";
 
-   $max_value=max($tableau);
+   $maxValue = $tableau[0];
+for ($i = 1; $i < count($tableau); $i++) {
+    if ($tableau[$i] > $maxValue) {
+        $maxValue = $tableau[$i];
+    }
+}
    echo "3-la valeur maximale du tableau:$max_value";
    echo "<br>";
    echo "<i style='color:red'>max est interdit, trouve un autre moyen </i>";
-   sort($tableau);
-   echo "4-le tableau trié est:";
-   foreach ($tableau as $valeur) {
-                    echo 'valeur:' . $valeur;
-                }
+   echo "<br>";
+$length = count($tableau);
+for ($i = 0; $i < $length - 1; $i++) {
+    for ($j = 0; $j < $length - $i - 1; $j++) {
+        if ($tableau[$j] > $tableau[$j + 1]) {
+            $temp = $tableau[$j];
+            $tableau[$j] = $tableau[$j + 1];
+            $tableau[$j + 1] = $temp;
+        }
+    }
+}
+   echo "4-le tableau trié est:" .implode(", ", $tableau);
+   
 
                ?>
               
@@ -196,7 +214,18 @@ foreach ($panierMaman as $fruit) {
                 </ul>
             </td>
             <td>
-
+          <?php 
+          echo"1-première tache:"."<br>"."<br>";
+for ($i=1; $i <1000 ; $i++) { 
+    echo" etape:".$i."<br>";
+}
+echo"<br>"."<br>"."<br>";
+echo"2-deuxieme tache:"."<br>"."<br>";
+$nombres=range(1,1000);
+     foreach ($nombres as $chiffre) {
+       echo "etape:".$chiffre."<br>";
+     }
+            ?>
             </td>
         </tr>
     </table>
