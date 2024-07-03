@@ -91,7 +91,7 @@
 
 
                 <?php
-                $tableau = array(1, 2, 3, 4, 5, 6, 7, 8 ,9);
+                $tableau = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
                 print_r($tableau);
                 echo "<br>";
                 $somme = array_sum($tableau);
@@ -125,78 +125,78 @@
             </td>
             <td>
                 <?php
-            $tableau=array(1 ,2,4,5 );
-            echo "1-les elements du tableau sont:";
-            var_dump($tableau);
-           $sum = 0;
-for ($i = 0; $i < count($tableau); $i++) {
-    $sum += $tableau[$i];
-}
-            echo "<i style='color:red'>je veux que tu affiche les élement via une boucle </i>";
-            echo "<br>";
-echo "2-La somme de tous les elements est :" .$sum;
-echo "<br>";
-echo "<i style='color:red'>array_sum est interdit, trouve un autre moyen </i>";
-   echo "<br>";
+                $tableau = array(1, 2, 4, 5);
+                echo "1-les elements du tableau sont:";
+                var_dump($tableau);
+                $sum = 0;
+                for ($i = 0; $i < count($tableau); $i++) {
+                    $sum += $tableau[$i];
+                }
+                echo "<i style='color:red'>je veux que tu affiche les élement via une boucle </i>";
+                echo "<br>";
+                echo "2-La somme de tous les elements est :" . $sum;
+                echo "<br>";
+                echo "<i style='color:red'>array_sum est interdit, trouve un autre moyen </i>";
+                echo "<br>";
 
-   $maxValue = $tableau[0];
-for ($i = 1; $i < count($tableau); $i++) {
-    if ($tableau[$i] > $maxValue) {
-        $maxValue = $tableau[$i];
-    }
-}
-   echo "3-la valeur maximale du tableau:$max_value";
-   echo "<br>";
-   echo "<i style='color:red'>max est interdit, trouve un autre moyen </i>";
-   echo "<br>";
-$length = count($tableau);
-for ($i = 0; $i < $length - 1; $i++) {
-    for ($j = 0; $j < $length - $i - 1; $j++) {
-        if ($tableau[$j] > $tableau[$j + 1]) {
-            $temp = $tableau[$j];
-            $tableau[$j] = $tableau[$j + 1];
-            $tableau[$j + 1] = $temp;
-        }
-    }
-}
-   echo "4-le tableau trié est:" .implode(", ", $tableau);
-   
+                $maxValue = $tableau[0];
+                for ($i = 1; $i < count($tableau); $i++) {
+                    if ($tableau[$i] > $maxValue) {
+                        $maxValue = $tableau[$i];
+                    }
+                }
+                echo "3-la valeur maximale du tableau:$max_value";
+                echo "<br>";
+                echo "<i style='color:red'>max est interdit, trouve un autre moyen </i>";
+                echo "<br>";
+                $length = count($tableau);
+                for ($i = 0; $i < $length - 1; $i++) {
+                    for ($j = 0; $j < $length - $i - 1; $j++) {
+                        if ($tableau[$j] > $tableau[$j + 1]) {
+                            $temp = $tableau[$j];
+                            $tableau[$j] = $tableau[$j + 1];
+                            $tableau[$j + 1] = $temp;
+                        }
+                    }
+                }
+                echo "4-le tableau trié est:" . implode(", ", $tableau);
 
-               ?>
-              
+
+                ?>
+
             </td>
         </tr>
         <tr>
             <th>Exercice 5</th>
             <th>
-               <?php
-               $Nom="olloko";
-               $prenom="marc-roland";
-               $nom_complet=" marc-roland olloko " ;            
-                 echo "1-le nom complet est:$nom_complet";
-                 echo '<br>';
-               $panierMaman=array('pomme','banane','cerise');
-              $listeFruits = "";
-$first = true;
+                <?php
+                $Nom = "olloko";
+                $prenom = "marc-roland";
+                $nom_complet = " marc-roland olloko ";
+                echo "1-le nom complet est:$nom_complet";
+                echo '<br>';
+                $panierMaman = array('pomme', 'banane', 'cerise');
+                $listeFruits = "";
+                $first = true;
 
-foreach ($panierMaman as $fruit) {
-    if ($first) {
-        $listeFruits .= $fruit;
-        $first = false;
-    } else {
-        $listeFruits .= ", " . $fruit;
-    }
-}
-    echo"2-la liste de maman est:".$listeFruits;
+                foreach ($panierMaman as $fruit) {
+                    if ($first) {
+                        $listeFruits .= $fruit;
+                        $first = false;
+                    } else {
+                        $listeFruits .= ", " . $fruit;
+                    }
+                }
+                echo "2-la liste de maman est:" . $listeFruits;
 
-    ?> 
+                ?>
             </th>
         </tr>
         <tr>
             <td>
                 <ul>
                     <li>Créez un script PHP qui prend deux variables, un prénom et un nom, les concatèner et afficher le nom complet. Ex: Nom complet : Cyriaque KODIA</li>
-                    <li>Soit la liste de course de maman suivante  :pomme,banane,cerise. créer un  tableau contenant cette liste,  ajouter le contenue de cette liste dans la variable "$panierMaman" séparé par une virgule puis afficher la liste de maman comme suit : "la liste de maman est ..........", l'utilisation de l'opérateur  ".=" est obligatoire </li>
+                    <li>Soit la liste de course de maman suivante :pomme,banane,cerise. créer un tableau contenant cette liste, ajouter le contenue de cette liste dans la variable "$panierMaman" séparé par une virgule puis afficher la liste de maman comme suit : "la liste de maman est ..........", l'utilisation de l'opérateur ".=" est obligatoire </li>
                 </ul>
             </td>
             <td>
@@ -214,18 +214,40 @@ foreach ($panierMaman as $fruit) {
                 </ul>
             </td>
             <td>
-          <?php 
-          echo"1-première tache:"."<br>"."<br>";
-for ($i=1; $i <1000 ; $i++) { 
-    echo" etape:".$i."<br>";
-}
-echo"<br>"."<br>"."<br>";
-echo"2-deuxieme tache:"."<br>"."<br>";
-$nombres=range(1,1000);
-     foreach ($nombres as $chiffre) {
-       echo "etape:".$chiffre."<br>";
-     }
-            ?>
+                <?php
+                echo "1-première tache:" . "<br>" . "<br>";
+                for ($i = 1; $i < 1000; $i++) {
+                    echo " etape:" . $i . "<br>";
+                }
+                echo "<br>" . "<br>" . "<br>";
+                echo "2-deuxieme tache:" . "<br>" . "<br>";
+                $nombres = range(1, 1000);
+                foreach ($nombres as $chiffre) {
+                    echo "etape:" . $chiffre . "<br>";
+                }
+                ?>
+            </td>
+        </tr>
+        <tr>
+            <th>Exercice 7</th>
+            <th>Resultat</th>
+        </tr>
+        <tr>
+            <td>
+                Vous devez créer un script PHP qui prend une note sur 100 en entrée et retourne une appréciation en fonction de la note obtenue. Les appréciations doivent être basées sur les critères suivants :
+
+                <ul>
+                    <li>Note >= 90 : "Excellent"</li>
+                    <li>80 <= Note < 90 : "Très Bien"</li>
+                    <li>70 <=Note < 80 : "Bien"</li>
+                    <li>60 <=Note < 70 : "Assez Bien"</li>
+                    </li>50 <=Note < 60 : "Passable"</li>
+                </ul> 
+                <p>Astuce, il est possible d'éxécuter un script php depuis invite de commande Ex: courPHP>php cli.php. Merci de modifier le fichier CLI </p>
+                <p>VOus pouvez utiliser les functions php suivante : trim, fopen ("php://stdin","r"), fgets($handle)</p>
+            </td>
+            <td>
+                <a href="cli.php">cli.php</a>
             </td>
         </tr>
     </table>
