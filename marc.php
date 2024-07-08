@@ -247,6 +247,7 @@
                 <p>VOus pouvez utiliser les functions php suivante : trim, fopen ("php://stdin","r"), fgets($handle)</p>
             </td>
             <td>
+                <p style="color: red;">Il est toujours possible d'entrer un nombre supérieur 100, il est aussi possible d'inserer des caractère merci de bloquer</p>
                 <a href="cli.php">cli.php</a>
             </td>
         </tr>
