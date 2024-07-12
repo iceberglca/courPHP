@@ -1,6 +1,6 @@
 <?php
 $note=100;
-function obtenirAppreciation($note) {
+function getAppreciation($note) {
     if ($note >= 90) {
         return "Excellent";
     } elseif ($note >= 80) {
@@ -15,13 +15,24 @@ function obtenirAppreciation($note) {
         return "Insuffisant";
     }
 }
-echo "Entrez une note sur 100 : ";
-str_repeat(0, 100);
-$handle = fopen("php://stdin", "r");
-$note = fgets($handle);
-fclose($handle);
-$note = trim($note);
-$note = (int)$note;
-$appreciation = obtenirAppreciation($note);
-echo "La note de $note correspond à : $appreciation\n";
+
+while (true) {
+    
+    echo "Veuillez entrer une note sur 100 : ";
+    
+
+    $input = trim(fgets(STDIN));
+    
+   
+    if (is_numeric($input) && $input >= 0 && $input <= 100) {
+        $note = (int)$input;
+        $appreciation = getAppreciation($note);
+        echo "Vous avez entré une note valide : $note\n";
+        echo "Appréciation : $appreciation\n";
+        break; 
+        echo "La note doit être un nombre entre 0 et 100. Veuillez réessayer.\n";
+    }
+}
+
+
 ?>
