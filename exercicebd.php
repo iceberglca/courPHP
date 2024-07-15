@@ -63,6 +63,7 @@
                 <p>Afficher les appels d'offre uniquement les titres et la description
                 </p>
             </td>
+            select titre AND description from appel_offre;
             <td>
                 <?php echo 'Bonjour généré dynamiquement en PHP !'; ?>
             </td>
@@ -76,6 +77,7 @@
                 <p>ecrit la requete pour afficher les appels d'offre privées
                 </p>
             </td>
+            select df[ID_type_ap]=1 from appel_offre;
             <td>
                 
             </td>
@@ -89,7 +91,8 @@
                 <p>Ecrire la requète pour compter le nombre total d'offre
                 </p>
             </td>
-            <td>
+            select count(*) as appel_offre from prestatire;
+                        <td>
                 
             </td>
         </tr>
@@ -102,6 +105,7 @@
                 <p>faire la moyenne du montant de toute les soumissions
                 </p>
             </td>
+            select AVG montant AS montant from soumission ;
             <td>
                 
             </td>
@@ -115,6 +119,7 @@
                 <p>Afficher le prestataire qui a le plus gros montant soumissioné
                 </p>
             </td>
+            select* from soumission  order by montant desc limit 1  
             <td>
                 
             </td>
@@ -128,6 +133,7 @@
                 <p>Afficher les offres qui n'ont pas été soumissioné
                 </p>
             </td>
+select*  from appel_offre where ID is null 
             <td>
                 
             </td>
@@ -141,6 +147,8 @@
                 <p>Afficher la requète pour changer l'email du presataire ciriac en ciriac@cnps.ci
                 </p>
             </td>
+           update prestataire set EMAIL='ciriac@cnps.ci'
+           where ID=3;
             <td>
                 
             </td>
@@ -154,6 +162,7 @@
                 <p>Supprimer le prestataire doumbia bakari
                 </p>
             </td>
+            DELETE FROM prestataire WHERE ID=10;
             <td>
                 
             </td>
@@ -167,6 +176,7 @@
                 <p>Faire une jointure de toute les tables présentes
                 </p>
             </td>
+            SELECT * FROM prestataire JOIN soumission ON prestataire.ID=soumission.ID_prestataire JOIN appel_offre ON soumission.ID=appel_offre.ID JOIN type_ap ON appel_offre.ID_type_ap=type_ap.ID;
             <td>
                 
             </td>
