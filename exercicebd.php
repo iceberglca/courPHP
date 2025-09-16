@@ -144,10 +144,10 @@ select*  from appel_offre where ID is null
         </tr>
         <tr>
             <td>
-                <p>Afficher la requète pour changer l'email du presataire ciriac en ciriac@cnps.ci
+                <p>Afficher la requète pour changer l'email du presataire ciriac en ciriac@wooni.ci
                 </p>
             </td>
-           update prestataire set EMAIL='ciriac@cnps.ci'
+           update prestataire set EMAIL='ciriac@wooni.ci'
            where ID=3;
             <td>
                 
